@@ -151,3 +151,9 @@ def ntl_store : RISCVBuiltin<"void(...)">;
 // XCV extensions.
 //===----------------------------------------------------------------------===//
 include "clang/Basic/BuiltinsRISCVXCV.td"
+
+
+//===----------------------------------------------------------------------===//
+// Custom extensions form ECXL+
+//===----------------------------------------------------------------------===//
+def factorial : RISCVBuiltin<"unsigned int(unsigned int)">;

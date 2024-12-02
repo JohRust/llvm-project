@@ -1883,3 +1883,16 @@ let TargetPrefix = "riscv" in {
 include "llvm/IR/IntrinsicsRISCVXTHead.td"
 include "llvm/IR/IntrinsicsRISCVXsf.td"
 include "llvm/IR/IntrinsicsRISCVXCV.td"
+
+
+//===----------------------------------------------------------------------===//
+// Custom instrinsic definitions from the ECXL+ project
+//===----------------------------------------------------------------------===//
+let TargetPrefix = "riscv" in {
+
+  class RiscvFactorial
+      : Intrinsic<[llvm_i32_ty], [llvm_i32_ty],
+              [IntrNoMem, IntrWillReturn, IntrSpeculatable]>;
+  
+  def int_riscv_factorial : RiscvFactorial;
+}
