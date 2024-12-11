@@ -23118,6 +23118,9 @@ Value *CodeGenFunction::EmitRISCVBuiltinExpr(unsigned BuiltinID,
   case RISCV::BI__builtin_riscv_factorial:
     ID = Intrinsic::riscv_factorial;
     break;
+  case RISCV::BI__builtin_riscv_dummy_r_type:
+    ID = Intrinsic::riscv_dummy_r_type;
+    break;
 
     // Vector builtins are handled from here.
 #include "clang/Basic/riscv_vector_builtin_cg.inc"

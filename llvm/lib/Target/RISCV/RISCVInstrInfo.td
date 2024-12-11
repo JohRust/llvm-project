@@ -2075,4 +2075,4 @@ include "RISCVInstrGISel.td"
 //===----------------------------------------------------------------------===//
 // Custom instructions from ECXL+
 //===----------------------------------------------------------------------===//
-include "RISCVInstrInfoFactorial.td"
+include "RISCVInstrInfoEcxl.td"

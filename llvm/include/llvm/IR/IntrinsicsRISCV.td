@@ -1896,3 +1896,12 @@ let TargetPrefix = "riscv" in {
   
   def int_riscv_factorial : RiscvFactorial;
 }
+
+let TargetPrefix = "riscv" in {
+
+  class RiscvDummyRType
+      : Intrinsic<[llvm_i32_ty], [llvm_i32_ty, llvm_i32_ty],
+              [IntrNoMem, IntrWillReturn, IntrSpeculatable]>;
+  
+  def int_riscv_dummy_r_type : RiscvDummyRType;
+}
