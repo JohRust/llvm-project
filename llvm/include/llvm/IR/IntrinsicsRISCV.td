@@ -1903,5 +1903,9 @@ let TargetPrefix = "riscv" in {
       : Intrinsic<[llvm_i32_ty], [llvm_i32_ty, llvm_i32_ty],
               [IntrNoMem, IntrWillReturn, IntrSpeculatable]>;
   
-  def int_riscv_dummy_r_type : RiscvDummyRType;
+  def int_riscv_dummy_r_type1 : RiscvDummyRType;
+  def int_riscv_dummy_r_type2 : RiscvDummyRType;
+  def int_riscv_dummy_r_type3 : RiscvDummyRType;
+  def int_riscv_dummy_r_type4 : RiscvDummyRType;
+  def int_riscv_dummy_r_type5 : RiscvDummyRType;
 }
