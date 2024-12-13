@@ -157,4 +157,8 @@ include "clang/Basic/BuiltinsRISCVXCV.td"
 // Custom extensions form ECXL+
 //===----------------------------------------------------------------------===//
 def factorial : RISCVBuiltin<"unsigned int(unsigned int)">;
-def dummy_r_type : RISCVBuiltin<"unsigned int(int, int)">;
+def dummy_r_type1 : RISCVBuiltin<"unsigned int(int, int)">;
+def dummy_r_type2 : RISCVBuiltin<"unsigned int(int, int)">;
+def dummy_r_type3 : RISCVBuiltin<"unsigned int(int, int)">;
+def dummy_r_type4 : RISCVBuiltin<"unsigned int(int, int)">;
+def dummy_r_type5 : RISCVBuiltin<"unsigned int(int, int)">;
